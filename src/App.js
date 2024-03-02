@@ -1,5 +1,7 @@
 import "./App.css";
+import About from "./components/about/about";
 import Achievement from "./components/achievement/achievement";
+import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Info from "./components/info/info";
@@ -7,7 +9,7 @@ import Solution from "./components/solution/solution";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <Info />
       <div className="achievement">
@@ -53,8 +55,10 @@ function App() {
           text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
         />
       </div>
+      <About />
+      <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 

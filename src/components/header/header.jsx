@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import "./header.css";
+import headerImage from "./headerImg.png";
 
 function Header() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
+  const openNav = () => {
+    setIsOpen(true);
+  };
+
+  const closeNav = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -12,45 +18,29 @@ function Header() {
       <div className="header-title">
         Doctor<b className="header-title-bold">Care</b>
       </div>
+
+      <div
+        id="mySidenav"
+        className={`sidenav ${isOpen ? "open" : ""}`}
+        style={{ width: isOpen ? "250px" : "0" }}
+      >
+        <a href="#" className="closebtn" onClick={closeNav}>
+          &times;
+        </a>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Depoimentos</a>
+        <div className="header-button">
+          <div className="header-btn-text"> AGENDE SUA CONSULTA</div>
+        </div>
+      </div>
+
       <div className="menu-button">
-        <button className="icon-button" onClick={toggleSidebar}>
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 20H30"
-              stroke="#fffffF"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M10 12H30"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M18 28L30 28"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+        <button className="icon-button" onClick={openNav}>
+          <img src={headerImage} alt=" image" />
         </button>
       </div>
-      {/* <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div> */}
     </div>
   );
 }

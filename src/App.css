@@ -3,9 +3,22 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
+  .solution {
+    width: 100% !important;
+    padding-bottom: 120px;
+  }
+  .solution-main-mini-title {
+    text-align: center;
+  }
+  .solution-boxes {
+    margin-left: 7%;
+    max-width: 1121px;
+  }
   .achievement {
     display: flex;
     width: max-content !important;
+    position: absolute;
+    top: 885px;
   }
 
   .achievement-box {
@@ -16,20 +29,6 @@ body {
     border-right: 1px solid #00856f;
   }
 
-  .solution-box {
-    width: calc(33.33% - 22px);
-  }
-  .solution-mini-title {
-    font-size: 14px;
-    color: #00856f;
-  }
-  .solution-title {
-    font-size: 30px;
-    font-weight: bold;
-    /* height: 117px; */
-    width: 314px;
-    color: #212529;
-  }
   .footer {
     width: 100% !important;
   }
@@ -91,18 +90,24 @@ body {
 }
 .solution {
   background-color: #f7f9f9;
-  max-width: 100%; /* Optional: Set a maximum width for the container */
+  max-width: 100%;
+  min-width: 375px;
   width: 375px;
   margin-left: 0px;
-  /* width: 100%; */
+  margin-top: 0px;
+}
+.solution-main {
+}
+.solution-boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 0px;
 }
 .solution-box {
-  /* width: calc(33.33% - 32px);  */
-  max-width: 327px; /* Set a maximum width for each box */
+  /* width: calc(33.33% - 32px); */
+  max-width: 327px;
+  max-width: 207px;
+  min-width: 327px;
   width: 327px;
   height: 207px;
   background-color: #ffffff;
@@ -129,13 +134,13 @@ body {
   margin-top: 2px;
 }
 .solution-main-mini-title {
-  margin-top: 250px;
+  /* margin-top: 250px; */
   margin-left: 145px;
   margin-bottom: 14px;
   font-size: 14px;
   font-weight: bold;
   color: #00856f;
-  /* text-align: center; */
+  padding-top: 50px;
 }
 .solution-main-title {
   margin: 30px;
@@ -288,12 +293,14 @@ body {
 .about {
   width: 375px;
   background-color: #fffaf1;
+  display: flex;
 }
 .about-box {
   width: 325px;
   /* display: flex; */
-  align-items: center;
+  /* flex-direction: row-reverse; */
 }
+
 .about-mini-title {
   font-size: 14px;
   padding-top: 41px;
@@ -325,8 +332,12 @@ body {
 }
 .contact {
   width: 375px;
+  min-width: 375px;
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .contact-box {
   width: 325px;
 }

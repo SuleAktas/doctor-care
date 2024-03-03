@@ -1,8 +1,9 @@
 import React from "react";
+import "./solution.css";
 
 function Solution(props) {
   return (
-    <div>
+    <>
       <div className="solution-box">
         <div className="solution-check">
           <div className="solution-check-mark"></div>
@@ -10,7 +11,7 @@ function Solution(props) {
         <div className="solution-title">{props.title}</div>
         <div className="solution-text">{props.text}</div>
       </div>
-    </div>
+    </>
   );
 }
 

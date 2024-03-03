@@ -19,41 +19,44 @@ function App() {
       </div>
 
       <div className="solution">
-        <div className="solution-main-mini-title"> SERVIÇOS</div>
-        <div className="solution-main-title">
-          Como podemos ajudá-lo a se sentir melhor?
+        <div className="solution-main">
+          <div className="solution-main-mini-title"> SERVIÇOS</div>
+          <div className="solution-main-title">
+            Como podemos ajudá-lo a se sentir melhor?
+          </div>
         </div>
-
-        <Solution
-          title="Problemas digestivos"
-          text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        <div className="solution-boxes">
+          <Solution
+            title="Problemas digestivos"
+            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim."
-        />
+          />
 
-        <Solution
-          title="Saúde Hormonal"
-          text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-        />
+          <Solution
+            title="Saúde Hormonal"
+            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
+          />
 
-        <Solution
-          title="Bem-estar mental"
-          text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-        />
+          <Solution
+            title="Bem-estar mental"
+            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
+          />
 
-        <Solution
-          title="Cuidados Pediátricos"
-          text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-        />
+          <Solution
+            title="Cuidados Pediátricos"
+            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
+          />
 
-        <Solution
-          title="Autoimune e Inflamação"
-          text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-        />
+          <Solution
+            title="Autoimune e Inflamação"
+            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
+          />
 
-        <Solution
-          title="Saúde do Coração"
-          text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-        />
+          <Solution
+            title="Saúde do Coração"
+            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
+          />
+        </div>
       </div>
       <About />
       <Contact />

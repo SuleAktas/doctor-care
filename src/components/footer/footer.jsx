@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div className="footer">
       <div className="footer-title">
@@ -8,10 +10,10 @@ function Footer() {
       </div>
       <div className="footer-info">
         <div className="footer-row">
-          <div className="footer-margin"> ©2021 Beautysalon.</div>
+          <div className="footer-margin"> ©2024 Beautysalon.</div>
         </div>
         <div className="footer-row">
-          <div className="footer-margin"> Todos os direitos reservados.</div>
+          <div className="footer-margin"> {t("footerTitle")}</div>
         </div>
         <div className="footer-row">
           <div className="footer-icons">

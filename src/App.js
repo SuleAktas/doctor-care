@@ -6,56 +6,39 @@ import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Info from "./components/info/info";
 import Solution from "./components/solution/solution";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
       <Info />
       <div className="achievement">
-        <Achievement number=" +3.500" text="Pacientes atendidos" />
-        <Achievement number="+15" text="Especialistas disponíveis" />
-        <Achievement number="+10" text="Anos no mercado" />
+        <Achievement number=" +3.500" text={t("achievement1")} />
+        <Achievement number="+15" text={t("achievement2")} />
+        <Achievement number="+10" text={t("achievement3")} />
       </div>
 
       <div className="solution">
         <div className="solution-main">
-          <div className="solution-main-mini-title"> SERVIÇOS</div>
-          <div className="solution-main-title">
-            Como podemos ajudá-lo a se sentir melhor?
+          <div className="solution-main-mini-title">
+            {t("solutionMiniTitle")}
           </div>
+          <div className="solution-main-title">{t("solutonMainTitle")}</div>
         </div>
         <div className="solution-boxes">
-          <Solution
-            title="Problemas digestivos"
-            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim."
-          />
+          <Solution title={t("solution1Title")} text={t("solution1Exp")} />
 
-          <Solution
-            title="Saúde Hormonal"
-            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-          />
+          <Solution title={t("solution2Title")} text={t("solution2Exp")} />
 
-          <Solution
-            title="Bem-estar mental"
-            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-          />
+          <Solution title={t("solution3Title")} text={t("solution3Exp")} />
 
-          <Solution
-            title="Cuidados Pediátricos"
-            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-          />
+          <Solution title={t("solution4Title")} text={t("solution4Exp")} />
 
-          <Solution
-            title="Autoimune e Inflamação"
-            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-          />
+          <Solution title={t("solution5Title")} text={t("solution5Exp")} />
 
-          <Solution
-            title="Saúde do Coração"
-            text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim."
-          />
+          <Solution title={t("solution6Title")} text={t("solution6Exp")} />
         </div>
       </div>
       <About />

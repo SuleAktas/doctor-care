@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./header.css";
 import headerImage from "./headerImg.png";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const openNav = () => {
@@ -20,16 +23,16 @@ function Header() {
       </div>
       <div className="links-wider-page">
         <a href="#" className="selected">
-          Início
+          {t("headerLink1")}
         </a>
-        <a href="#">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">Depoimentos</a>
+        <a href="#">{t("headerLink2")}</a>
+        <a href="#">{t("headerLink3")}</a>
+        <a href="#">{t("headerLink4")}</a>
       </div>
       <div className="button-wider-page">
         <div className="info-button2">
           {" "}
-          <div className="info-btn-text2"> AGENDE SUA CONSULTA</div>
+          <div className="info-btn-text2"> {t("headerButton")}</div>
         </div>
       </div>
       <div
@@ -40,12 +43,12 @@ function Header() {
         <a href="#" className="closebtn" onClick={closeNav}>
           &times;
         </a>
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">Depoimentos</a>
+        <a href="#">{t("headerLink1")}</a>
+        <a href="#">{t("headerLink2")}</a>
+        <a href="#">{t("headerLink3")}</a>
+        <a href="#">{t("headerLink4")}</a>
         <div className="header-button">
-          <div className="header-btn-text"> AGENDE SUA CONSULTA</div>
+          <div className="header-btn-text"> {t("headerButton")}</div>
         </div>
       </div>
 

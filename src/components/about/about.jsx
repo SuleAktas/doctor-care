@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import aboutImage from "./Pic.png";
 import aboutBigImage from "./Pic-4.png";
 import "./about.css";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
+
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 515);
   useEffect(() => {
     const handleResize = () => {
@@ -21,20 +24,9 @@ function About() {
     <div className="about">
       <div className="about-box">
         <div className="about-box-txt">
-          <div className="about-mini-title">SOBRE NÓS</div>
-          <div className="about-title">
-            Entenda quem somos e por que existimos
-          </div>
-          <div className="about-exp">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim. Amet minim mollit non
-            deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-            consequat duis enim. Amet minim mollit non deserunt ullamco est sit
-            aliqua dolor do amet sint. Velit officia consequat duis enim. Amet
-            minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-            Velit officia consequat duis enim. Amet minim mollit non deserunt
-            ullamco est sit aliqua dolor do amet sint.
-          </div>
+          <div className="about-mini-title">{t("aboutMiniTitle")}</div>
+          <div className="about-title">{t("aboutTitle")}</div>
+          <div className="about-exp">{t("aboutExp")}</div>
         </div>
         <div className="about-box-img">
           <div className="about-img">

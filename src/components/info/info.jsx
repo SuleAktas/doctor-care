@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import myImage from "./image.png";
 import bigImage from "./imageLarge.png";
 import "./info.css";
+import { useTranslation } from "react-i18next";
 
 export default function Info() {
+  const { t } = useTranslation();
+
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 600);
   useEffect(() => {
     const handleResize = () => {
@@ -22,14 +25,11 @@ export default function Info() {
     <div className="info">
       <div className="info-txt">
         {" "}
-        <div className="info-mini-title">BOAS-VINDAS A DOCTORCARE 👋</div>
+        <div className="info-mini-title">{t("infoMiniTitle")}</div>
         <div className="info-title">
-          <b>Assistência médica simplificada para todos</b>
+          <b>{t("infoTitle")}</b>
         </div>
-        <div className="info-exp">
-          Os médicos da DoctorCare vão além dos sintomas para tratar a causa
-          raiz de sua doença e proporcionar uma cura a longo prazo.
-        </div>
+        <div className="info-exp">{t("infoExp")}</div>
         <div className="info-button">
           {" "}
           <div className="info-btn-img">
@@ -47,7 +47,7 @@ export default function Info() {
               />
             </svg>
           </div>
-          <div className="info-btn-text"> AGENDE SUA CONSULTA</div>
+          <div className="info-btn-text"> {t("headerButton")}</div>
         </div>
       </div>
       <div className="info-img">

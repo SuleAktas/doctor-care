@@ -4,8 +4,11 @@ import contactBigImage from "./pic-3.png";
 import mapImage from "./map-pin 1.png";
 import mailImage from "./mail 1.png";
 import "./contact.css";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
+
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 515);
   useEffect(() => {
     const handleResize = () => {
@@ -23,7 +26,7 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact-info-box">
-        <div className="contact-title">Entre em contato com a gente!</div>
+        <div className="contact-title">{t("contactTitle")}</div>
         <div className="contact-address">
           <div className="contact-address-icon">
             {" "}

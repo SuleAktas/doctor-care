@@ -6,7 +6,71 @@
     font-size: 18px;
   }
 }
+@media screen and (min-width: 700px) {
+  .sidenav {
+    display: none;
+  }
+  .menu-button {
+    display: none; /* Display the sidenav when it's open */
+  }
 
+  .links-wider-page {
+    display: block !important;
+  }
+  .button-wider-page {
+    display: block !important;
+  }
+}
+
+.links-wider-page {
+  width: fit-content; /* Make the container width fit its content */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 25px;
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center items horizontally */
+}
+.info-button2 {
+  margin-top: 17px;
+  display: flex;
+  margin-left: 56px;
+  width: 210px;
+  height: 40px;
+  background-color: #dce9e2;
+  border-radius: 45px;
+  border: 2px solid #00856f;
+}
+
+.info-btn-text2 {
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #00856f;
+  text-align: center;
+  /* background-color: #dce9e2; */
+}
+
+.links-wider-page a {
+  margin-right: 35px; /* Adjust the margin as per your preference */
+  color: #00856f; /* Change the color as per your preference */
+  /* /* font-family: Arial, sans-serif; */
+  text-decoration: none;
+  font-size: 24px;
+}
+.links-wider-page a:hover {
+  color: #555; /* Change the hover color as per your preference */
+  text-decoration: underline !important;
+}
+
+.links-wider-page {
+  display: none;
+  margin-left: 500px;
+  color: #00856f;
+}
+.button-wider-page {
+  display: none;
+  margin-right: 147px;
+}
 .sidenav {
   height: 100%;
   width: 0;

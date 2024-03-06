@@ -18,7 +18,20 @@ function Header() {
       <div className="header-title">
         Doctor<b className="header-title-bold">Care</b>
       </div>
-
+      <div className="links-wider-page">
+        <a href="#" className="selected">
+          Início
+        </a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Depoimentos</a>
+      </div>
+      <div className="button-wider-page">
+        <div className="info-button2">
+          {" "}
+          <div className="info-btn-text2"> AGENDE SUA CONSULTA</div>
+        </div>
+      </div>
       <div
         id="mySidenav"
         className={`sidenav ${isOpen ? "open" : ""}`}

@@ -52,7 +52,6 @@ export default function Info() {
       </div>
       <div className="info-img">
         <div className="info-big-picture">
-          {/* <img src={myImage} alt=" image" /> */}
           {isLargeScreen ? (
             <img src={bigImage} alt="Large Screen" />
           ) : (

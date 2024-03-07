@@ -1,12 +1,16 @@
 @media screen and (min-width: 550px) {
   .contact {
-    width: 100%;
+    width: 100% !important;
     background-color: white;
     flex-direction: row;
   }
   .contact-img-box {
-    margin-left: 100px;
-    width: 50%;
+    /* margin-left: 20px !important; */
+    width: 50% !important;
+  }
+  .contact-info-box {
+    margin-left: 65px !important;
+    width: 40% !important;
   }
 }
 

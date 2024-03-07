@@ -1,16 +1,16 @@
 @media screen and (min-width: 550px) {
   .about {
-    width: 100%;
+    width: 100% !important;
   }
 
   .about-box {
-    width: 100%;
+    width: 100% !important;
     display: flex;
     flex-direction: row-reverse;
   }
   .about-box-txt {
     margin-left: 2%;
-    min-width: 480px;
+    min-width: 480px !important;
   }
   .about-box-img {
     margin-left: 6%;

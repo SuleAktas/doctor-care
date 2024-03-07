@@ -1,7 +1,7 @@
 @media only screen and (min-width: 700px) {
   .info {
     width: 100% !important;
-    height: fit-content;
+    height: fit-content !important;
     padding-bottom: 150px !important;
     display: flex;
   }
@@ -9,20 +9,26 @@
     margin-top: 80px;
     margin-left: 50px;
     width: 50%;
-    text-align: left;
     min-width: 500px;
   }
   .info-img {
     width: 50%;
   }
+  .info-mini-title {
+    margin-left: 26px !important;
+    text-align: start !important;
+  }
   .info-title {
     font-size: 52px;
     margin-top: 16px;
     margin-left: 26px;
-    text-align: left;
+    text-align: start !important;
+  }
+  .info-button {
+    margin-left: 26px !important;
   }
   .info-exp {
-    text-align: left;
+    text-align: start !important;
   }
 }
 .info {
@@ -35,6 +41,7 @@
   font-size: 14px;
   padding-top: 41px;
   margin-left: 60px;
+  text-align: center;
   color: #00856f;
 }
 .info-title {

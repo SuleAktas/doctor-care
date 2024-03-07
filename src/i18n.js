@@ -31,7 +31,7 @@ const resources = {
       headerLink2: "Hakkında",
       headerLink3: "Hizmetler",
       headerLink4: "Görüşler",
-      headerButton: "DANIŞMANLIĞINIZI PLANLAYIN",
+      headerButton: "PLANLAYALIM",
       infoMiniTitle: "DOCTORCARE HOŞGELDİNİZ 👋",
       infoTitle: "Herkes için basitleştirilmiş sağlık hizmeti",
       infoExp:

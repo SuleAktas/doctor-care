@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import contactImage from "./pic-2.png";
-import contactBigImage from "./pic-3.png";
-import mapImage from "./map-pin 1.png";
-import mailImage from "./mail 1.png";
+import contactImage from "../../assets/images/contactPic.png";
+import contactBigImage from "../../assets/images/contactBigPic.png";
+import mapImage from "../../assets/images/mapIcon.png";
+import mailImage from "../../assets/images/mailIcon.png";
 import "./contact.css";
 import { useTranslation } from "react-i18next";
 
@@ -57,7 +57,7 @@ function Contact() {
               />
             </svg>
           </div>
-          <div className="info-btn-text"> AGENDE SUA CONSULTA</div>
+          <div className="info-btn-text"> {t("headerButton")}</div>
         </div>
       </div>
       <div className="contact-img-box">

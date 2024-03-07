@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
-import headerImage from "./headerImg.png";
+import headerImage from "../../assets/images/headerIcon.png";
 import { useTranslation } from "react-i18next";
 
 function Header() {

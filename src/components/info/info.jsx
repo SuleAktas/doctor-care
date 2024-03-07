@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import myImage from "./image.png";
-import bigImage from "./imageLarge.png";
+import myImage from "../../assets/images/infoPic.png";
+import bigImage from "../../assets/images/infoPicBig.png";
 import "./info.css";
 import { useTranslation } from "react-i18next";
 

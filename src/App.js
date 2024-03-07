@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect } from "react";
 import About from "./components/about/about";
 import Achievement from "./components/achievement/achievement";
 import Contact from "./components/contact/contact";
@@ -9,7 +10,14 @@ import Solution from "./components/solution/solution";
 import { useTranslation } from "react-i18next";
 
 function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const lang = window.location.pathname.startsWith("/tr") ? "tr" : "sp";
+
+  useEffect(() => {
+    i18n.changeLanguage(lang);
+  }, [lang, i18n]);
+
   return (
     <>
       <Header />

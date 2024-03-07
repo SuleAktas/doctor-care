@@ -1,0 +1,56 @@
+@media only screen and (min-width: 700px) {
+  .footer {
+    width: 100% !important;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-margin {
+    margin: 5px; /* Adjust margin as needed */
+  }
+
+  .footer-icons {
+    margin-left: auto; /* Push icons to the end of the row */
+    margin-right: 5px; /* Add some space between icons and text */
+  }
+}
+.footer {
+  width: 375px;
+  height: 285px;
+  background-color: #00856f;
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-left: 26px;
+  color: white;
+}
+.footer-info {
+  margin-left: 26px;
+  margin-top: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer-margin {
+  margin-bottom: 10px;
+}
+.footer-icons {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.footer-icons > * {
+  margin-right: 32px; /* Adjust the margin to create space between icons */
+}

@@ -18,8 +18,8 @@
   }
 
   .footer-icons {
-    margin-left: auto; /* Push icons to the end of the row */
-    margin-right: 5px; /* Add some space between icons and text */
+    margin-left: auto;
+    margin-right: 5px;
   }
 }
 .footer {
@@ -49,8 +49,7 @@
   margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 .footer-icons > * {
-  margin-right: 32px; /* Adjust the margin to create space between icons */
+  margin-right: 32px;
 }

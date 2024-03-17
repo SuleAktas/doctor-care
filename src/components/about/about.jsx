@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import aboutImage from "../../assets/images/aboutPic.png";
-import aboutBigImage from "../../assets/images/aboutBigPic.png";
-import "./about.css";
+import "./About.css";
 import { useTranslation } from "react-i18next";
 
 function About() {
+  const aboutImage = process.env.PUBLIC_URL + "/images/aboutPic.png";
+  const aboutBigImage = process.env.PUBLIC_URL + "/images/aboutBigPic.png";
   const { t } = useTranslation();
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 515);
@@ -31,9 +31,9 @@ function About() {
         <div className="about-box-img">
           <div className="about-img">
             {isLargeScreen ? (
-              <img src={aboutBigImage} alt="Large Screen" />
+              <img src={aboutBigImage} alt="About Doctor Care" />
             ) : (
-              <img src={aboutImage} alt="Small Screen" />
+              <img src={aboutImage} alt="About Doctor Care" />
             )}
           </div>
         </div>

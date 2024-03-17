@@ -24,8 +24,6 @@
 }
 .about-box {
   width: 325px;
-  /* display: flex; */
-  /* flex-direction: row-reverse; */
 }
 
 .about-mini-title {
@@ -38,9 +36,7 @@
   font-size: 29px;
   margin-top: 16px;
   margin-left: 24px;
-  /* padding: 24px; */
   font-weight: bold;
-  /* text-align: center; */
   color: #212529;
 }
 .about-exp {
@@ -48,7 +44,6 @@
   margin-top: 24px;
   margin-left: 26px;
   margin-right: 26px;
-  /* text-align: center; */
   color: #212529;
 }
 .about-img {

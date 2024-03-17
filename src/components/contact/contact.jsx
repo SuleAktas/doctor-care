@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import contactImage from "../../assets/images/contactPic.png";
-import contactBigImage from "../../assets/images/contactBigPic.png";
-import mapImage from "../../assets/images/mapIcon.png";
-import mailImage from "../../assets/images/mailIcon.png";
-import "./contact.css";
+import "./Contact.css";
 import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const contactImage = process.env.PUBLIC_URL + "/images/contactPic.png";
+  const contactBigImage = process.env.PUBLIC_URL + "/images/contactBigPic.png";
+  const mapImage = process.env.PUBLIC_URL + "/images/mapIcon.png";
+  const mailImage = process.env.PUBLIC_URL + "/images/mailIcon.png";
+
   const { t } = useTranslation();
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 515);
@@ -29,21 +30,18 @@ function Contact() {
         <div className="contact-title">{t("contactTitle")}</div>
         <div className="contact-address">
           <div className="contact-address-icon">
-            {" "}
-            <img src={mapImage} alt=" image" />
+            <img src={mapImage} alt=" map icon" />
           </div>
           <div className="contact-address-txt">R. Amauri Souza, 346</div>
         </div>
         <div className="contact-email">
           <div className="contact-email-icon">
-            {" "}
-            <img src={mailImage} alt=" image" />
+            <img src={mailImage} alt=" mail icon" />
           </div>
           <div className="contact-email-txt">contato@doctorcare.com</div>
         </div>
         <div className="info-button">
           <div className="info-btn-img">
-            {" "}
             <svg
               width="20"
               height="20"
@@ -63,9 +61,9 @@ function Contact() {
       <div className="contact-img-box">
         <div className="contact-img">
           {isLargeScreen ? (
-            <img src={contactBigImage} alt="Large Screen" />
+            <img src={contactBigImage} alt="Contact Doctor Care" />
           ) : (
-            <img src={contactImage} alt="Small Screen" />
+            <img src={contactImage} alt="Contact Doctor Care" />
           )}
         </div>
       </div>

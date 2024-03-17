@@ -14,7 +14,6 @@
   }
 }
 .solution-box {
-  /* width: calc(33.33% - 32px); */
   max-width: 327px;
   max-width: 207px;
   min-width: 327px;
@@ -44,7 +43,6 @@
   margin-top: 2px;
 }
 .solution-main-mini-title {
-  /* margin-top: 250px; */
   margin-left: 145px;
   margin-bottom: 14px;
   font-size: 14px;

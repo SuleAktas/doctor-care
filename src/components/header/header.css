@@ -11,7 +11,7 @@
     display: none;
   }
   .menu-button {
-    display: none; /* Display the sidenav when it's open */
+    display: none;
   }
 
   .links-wider-page {
@@ -60,7 +60,6 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  /* color: #00856f; */
 }
 
 .icon-button svg {
@@ -69,11 +68,11 @@
   fill: #ffffff;
 }
 .links-wider-page {
-  width: fit-content; /* Make the container width fit its content */
-  margin: 0 auto; /* Center the container horizontally */
+  width: fit-content;
+  margin: 0 auto;
   margin-top: 25px;
-  display: flex; /* Use flexbox to align items */
-  justify-content: center; /* Center items horizontally */
+  display: flex;
+  justify-content: center;
 }
 .info-button2 {
   margin-top: 17px;
@@ -93,18 +92,16 @@
   font-weight: bold;
   color: #00856f;
   text-align: center;
-  /* background-color: #dce9e2; */
 }
 
 .links-wider-page a {
-  margin-right: 35px; /* Adjust the margin as per your preference */
-  color: #00856f; /* Change the color as per your preference */
-  /* /* font-family: Arial, sans-serif; */
+  margin-right: 35px;
+  color: #00856f;
   text-decoration: none;
   font-size: 24px;
 }
 .links-wider-page a:hover {
-  color: #555; /* Change the hover color as per your preference */
+  color: #555;
   text-decoration: underline !important;
 }
 

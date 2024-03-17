@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./header.css";
-import headerImage from "../../assets/images/headerIcon.png";
+import "./Header.css";
 import { useTranslation } from "react-i18next";
 
 function Header() {
+  const headerImage = process.env.PUBLIC_URL + "/images/headerIcon.png";
+
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,6 @@ function Header() {
       </div>
       <div className="button-wider-page">
         <div className="info-button2">
-          {" "}
           <div className="info-btn-text2"> {t("headerButton")}</div>
         </div>
       </div>
@@ -54,7 +54,7 @@ function Header() {
 
       <div className="menu-button">
         <button className="icon-button" onClick={openNav}>
-          <img src={headerImage} alt=" image" />
+          <img src={headerImage} alt=" Header Icon" />
         </button>
       </div>
     </div>

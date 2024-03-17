@@ -5,7 +5,6 @@
     flex-direction: row;
   }
   .contact-img-box {
-    /* margin-left: 20px !important; */
     width: 50% !important;
   }
   .contact-info-box {
@@ -37,7 +36,6 @@
   margin-left: 26px;
   margin-right: 26px;
   display: flex;
-  /* text-align: center; */
 }
 .contact-address-icon {
   margin-right: 10px;
@@ -53,7 +51,6 @@
   margin-left: 26px;
   margin-right: 26px;
   display: flex;
-  /* text-align: center; */
 }
 .contact-email-icon {
   margin-right: 10px;
@@ -68,7 +65,6 @@
   margin-top: 24px;
   margin-left: 26px;
   margin-right: 26px;
-  /* text-align: center; */
   color: #212529;
 }
 .contact-img {

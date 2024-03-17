@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import myImage from "../../assets/images/infoPic.png";
-import bigImage from "../../assets/images/infoPicBig.png";
-import "./info.css";
+import "./Info.css";
 import { useTranslation } from "react-i18next";
 
 export default function Info() {
+  const myImage = process.env.PUBLIC_URL + "/images/infoPic.png";
+  const bigImage = process.env.PUBLIC_URL + "/images/infoPicBig.png";
   const { t } = useTranslation();
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 600);
@@ -24,16 +24,13 @@ export default function Info() {
   return (
     <div className="info">
       <div className="info-txt">
-        {" "}
         <div className="info-mini-title">{t("infoMiniTitle")}</div>
         <div className="info-title">
           <b>{t("infoTitle")}</b>
         </div>
         <div className="info-exp">{t("infoExp")}</div>
         <div className="info-button">
-          {" "}
           <div className="info-btn-img">
-            {" "}
             <svg
               width="20"
               height="20"
@@ -53,9 +50,9 @@ export default function Info() {
       <div className="info-img">
         <div className="info-big-picture">
           {isLargeScreen ? (
-            <img src={bigImage} alt="Large Screen" />
+            <img src={bigImage} alt="Information About Doctor Care" />
           ) : (
-            <img src={myImage} alt="Small Screen" />
+            <img src={myImage} alt="Information About Doctor Care" />
           )}
         </div>
       </div>

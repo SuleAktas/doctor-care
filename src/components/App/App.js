@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 function App() {
   const { t, i18n } = useTranslation();
 
-  const lang = window.location.pathname.startsWith("/tr") ? "tr" : "es";
+  // const lang = window.location.pathname.startsWith("/tr") ? "tr" : "es";
 
   const solutions = [
     { title: t("solution1Title"), text: t("solution1Exp") },
@@ -23,9 +23,9 @@ function App() {
     { title: t("solution6Title"), text: t("solution6Exp") },
   ];
 
-  useEffect(() => {
-    i18n.changeLanguage(lang);
-  }, [lang, i18n]);
+  // useEffect(() => {
+  //   i18n.changeLanguage(lang);
+  // }, [lang, i18n]);
 
   return (
     <>

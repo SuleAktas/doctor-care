@@ -1,13 +1,21 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import trTranslations from "./locales/tr.json";
+import esTranslations from "./locales/es.json";
 
-const DEFAULT_LANGUAGE = "tr";
+const userLanguage = navigator.language.split("-")[0];
+let DEFAULT_LANGUAGE = "es";
+
+if (userLanguage === "tr") {
+  DEFAULT_LANGUAGE = "tr";
+}
+
 const resources = {
   tr: {
-    translation: require("./locales/tr.json"),
+    translation: trTranslations,
   },
   es: {
-    translation: require("./locales/es.json"),
+    translation: esTranslations,
   },
 };
 

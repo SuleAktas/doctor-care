@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import "./Header.css";
+import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 
 function Header() {
+  const spainFlag = process.env.PUBLIC_URL + "/images/Spain-Flag.png";
+  const turkeyFlag = process.env.PUBLIC_URL + "/images/Turkey-Flag.png";
   const headerImage = process.env.PUBLIC_URL + "/images/headerIcon.png";
 
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleLanguageChange = (language) => {
+    i18n.changeLanguage(language);
+  };
 
   const openNav = () => {
     setIsOpen(true);
@@ -19,6 +26,15 @@ function Header() {
 
   return (
     <div className="header">
+      <div className="flags">
+        <a onClick={() => handleLanguageChange("es")}>
+          <img src={spainFlag} />
+        </a>
+
+        <a onClick={() => handleLanguageChange("tr")}>
+          <img src={turkeyFlag} />
+        </a>
+      </div>
       <div className="header-title">
         Doctor<b className="header-title-bold">Care</b>
       </div>

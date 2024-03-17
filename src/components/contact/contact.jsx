@@ -10,10 +10,10 @@ function Contact() {
 
   const { t } = useTranslation();
 
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 515);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 550);
   useEffect(() => {
     const handleResize = () => {
-      setIsLargeScreen(window.innerWidth > 515);
+      setIsLargeScreen(window.innerWidth > 550);
     };
 
     window.addEventListener("resize", handleResize);

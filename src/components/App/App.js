@@ -10,9 +10,7 @@ import Solution from "../Solution/Solution";
 import { useTranslation } from "react-i18next";
 
 function App() {
-  const { t, i18n } = useTranslation();
-
-  // const lang = window.location.pathname.startsWith("/tr") ? "tr" : "es";
+  const { t } = useTranslation();
 
   const solutions = [
     { title: t("solution1Title"), text: t("solution1Exp") },
@@ -22,10 +20,6 @@ function App() {
     { title: t("solution5Title"), text: t("solution5Exp") },
     { title: t("solution6Title"), text: t("solution6Exp") },
   ];
-
-  // useEffect(() => {
-  //   i18n.changeLanguage(lang);
-  // }, [lang, i18n]);
 
   return (
     <>

@@ -26,15 +26,6 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="flags">
-        <a onClick={() => handleLanguageChange("es")}>
-          <img src={spainFlag} />
-        </a>
-
-        <a onClick={() => handleLanguageChange("tr")}>
-          <img src={turkeyFlag} />
-        </a>
-      </div>
       <div className="header-title">
         Doctor<b className="header-title-bold">Care</b>
       </div>
@@ -72,6 +63,15 @@ function Header() {
         <button className="icon-button" onClick={openNav}>
           <img src={headerImage} alt=" Header Icon" />
         </button>
+      </div>
+      <div className="flags">
+        <a onClick={() => handleLanguageChange("es")}>
+          <img src={spainFlag} />
+        </a>
+
+        <a onClick={() => handleLanguageChange("tr")}>
+          <img src={turkeyFlag} />
+        </a>
       </div>
     </div>
   );

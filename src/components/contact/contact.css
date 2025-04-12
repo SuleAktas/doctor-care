@@ -1,74 +1,72 @@
 @media screen and (min-width: 550px) {
-  .contact {
-    width: 100% !important;
-    background-color: white;
-    flex-direction: row;
-  }
-  .contact-img-box {
-    width: 50% !important;
-  }
-  .contact-info-box {
-    margin-left: 65px !important;
-    width: 40% !important;
-  }
+	.contact {
+		width: 100% !important;
+		background-color: white;
+		flex-direction: row;
+	}
+	.contact-img-box {
+		width: 50% !important;
+	}
+	.contact-info-box {
+		margin-left: 65px !important;
+		width: 40% !important;
+	}
 }
 
 .contact {
-  width: 375px;
-  min-width: 375px;
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .contact-box {
-  width: 325px;
+	width: 325px;
 }
 .contact-title {
-  font-size: 30px;
-  font-weight: bold;
-  padding-top: 41px;
-  margin: 23px;
-  color: #212529;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 41px;
+	margin: 23px;
+	color: #212529;
 }
 .contact-address {
-  margin-top: 24px;
-  margin-left: 26px;
-  margin-right: 26px;
-  display: flex;
+	margin-top: 24px;
+	margin-left: 26px;
+	margin-right: 26px;
+	display: flex;
 }
 .contact-address-icon {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 .contact-address-txt {
-  font-size: 16px;
-  padding-top: 2px;
+	font-size: 16px;
+	padding-top: 2px;
 
-  color: #212529;
+	color: #212529;
 }
 .contact-email {
-  margin-top: 24px;
-  margin-left: 26px;
-  margin-right: 26px;
-  display: flex;
+	margin-top: 24px;
+	margin-left: 26px;
+	margin-right: 26px;
+	display: flex;
 }
 .contact-email-icon {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 .contact-email-txt {
-  padding-top: 2px;
-  font-size: 16px;
-  color: #212529;
+	padding-top: 2px;
+	font-size: 16px;
+	color: #212529;
 }
 .contact-whatsapp {
-  font-size: 18px;
-  margin-top: 24px;
-  margin-left: 26px;
-  margin-right: 26px;
-  color: #212529;
+	font-size: 18px;
+	margin-top: 24px;
+	margin-left: 26px;
+	margin-right: 26px;
+	color: #212529;
 }
 .contact-img {
-  margin-top: 50px;
-  margin-left: 26px;
-  margin-bottom: 100px;
+	margin-top: 50px;
+	margin-left: 26px;
+	margin-bottom: 100px;
 }

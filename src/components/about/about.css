@@ -1,54 +1,53 @@
 @media screen and (min-width: 550px) {
-  .about {
-    width: 100% !important;
-  }
+	.about {
+		width: 100% !important;
+	}
 
-  .about-box {
-    width: 100% !important;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .about-box-txt {
-    margin-left: 2%;
-    min-width: 480px !important;
-  }
-  .about-box-img {
-    margin-left: 6%;
-  }
+	.about-box {
+		width: 100% !important;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.about-box-txt {
+		margin-left: 2%;
+		min-width: 480px !important;
+	}
+	.about-box-img {
+		margin-left: 6%;
+	}
 }
 
 .about {
-  width: 375px;
-  background-color: #fffaf1;
-  display: flex;
+	background-color: #fffaf1;
+	display: flex;
 }
 .about-box {
-  width: 325px;
+	width: 325px;
 }
 
 .about-mini-title {
-  font-size: 14px;
-  padding-top: 41px;
-  margin-left: 23px;
-  color: #00856f;
+	font-size: 14px;
+	padding-top: 41px;
+	margin-left: 23px;
+	color: #00856f;
 }
 .about-title {
-  font-size: 29px;
-  margin-top: 16px;
-  margin-left: 24px;
-  font-weight: bold;
-  color: #212529;
+	font-size: 29px;
+	margin-top: 16px;
+	margin-left: 24px;
+	font-weight: bold;
+	color: #212529;
 }
 .about-exp {
-  font-size: 18px;
-  margin-top: 24px;
-  margin-left: 26px;
-  margin-right: 26px;
-  color: #212529;
+	font-size: 18px;
+	margin-top: 24px;
+	margin-left: 26px;
+	margin-right: 26px;
+	color: #212529;
 }
 .about-img {
-  margin-top: 60px;
-  margin-left: 24px;
-  margin-bottom: 100px;
-  padding-bottom: 100px;
+	margin-top: 60px;
+	margin-left: 24px;
+	margin-bottom: 100px;
+	padding-bottom: 100px;
 }

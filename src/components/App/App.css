@@ -1,82 +1,81 @@
 body {
-  font-family: "DM Sans", cursive;
-  margin: 0;
+	font-family: 'DM Sans', cursive;
+	margin: 0;
 }
 
 @media only screen and (min-width: 700px) {
-  .solution {
-    width: 100% !important;
-    padding-bottom: 120px;
-  }
-  .solution-main-mini-title {
-    text-align: center;
-    padding-top: 40px !important;
-  }
-  .solution-boxes {
-    margin-left: 7%;
-    max-width: 1121px;
-  }
-  .achievement {
-    display: flex;
-    width: max-content !important;
-    position: absolute;
-    top: 650px !important;
-    margin-left: 300px !important;
-  }
+	.solution {
+		width: 100% !important;
+		padding-bottom: 120px;
+	}
+	.solution-main-mini-title {
+		text-align: center;
+		padding-top: 40px !important;
+	}
+	.solution-boxes {
+		margin-left: 7%;
+		max-width: 1121px;
+	}
+	.achievement {
+		display: flex;
+		width: max-content !important;
+		position: absolute;
+		top: 650px !important;
+		margin-left: 300px !important;
+	}
 
-  .achievement-box {
-    width: 290px;
-  }
+	.achievement-box {
+		width: 290px;
+	}
 
-  .achievement-box:nth-child(-n + 2) {
-    border-right: 1px solid #00856f;
-  }
+	.achievement-box:nth-child(-n + 2) {
+		border-right: 1px solid #00856f;
+	}
 }
 
 .achievement {
-  width: 327px;
-  background-color: #fffaf1;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: absolute;
-  top: 875px;
+	width: 327px;
+	background-color: #fffaf1;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: absolute;
+	top: 875px;
 
-  margin-left: 24px;
-  margin-right: 24px;
-  border-radius: 10px;
+	margin-left: 24px;
+	margin-right: 24px;
+	border-radius: 10px;
 }
 
 .achievement-box {
-  width: 327px;
-  text-align: center;
-  height: 100px;
-  border-radius: 2%;
+	width: 327px;
+	text-align: center;
+	height: 100px;
+	border-radius: 2%;
 }
 .achievement-box:nth-child(-n + 2) {
-  padding-bottom: 60px;
+	padding-bottom: 60px;
 }
 
 .achievement-number {
-  font-size: 48px;
-  font-weight: bold;
-  color: #212529;
+	font-size: 48px;
+	font-weight: bold;
+	color: #212529;
 }
 
 .achievement-text {
-  font-size: 16px;
-  color: #00856f;
+	font-size: 16px;
+	color: #00856f;
 }
 .solution {
-  background-color: #f7f9f9;
-  max-width: 100%;
-  min-width: 375px;
-  width: 375px;
-  margin-left: 0px;
-  margin-top: 0px;
+	background-color: #f7f9f9;
+	max-width: 100%;
+	min-width: 375px;
+	margin-left: 0px;
+	margin-top: 0px;
 }
 
 .solution-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }

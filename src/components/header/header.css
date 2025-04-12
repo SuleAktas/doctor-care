@@ -28,7 +28,6 @@
 }
 .header {
 	top: 0;
-	width: 375px;
 	height: min-content;
 	background-color: #dce9e2;
 	display: flex;
@@ -51,9 +50,13 @@
 .menu-button {
 	flex: 1;
 	text-align: right;
-	padding-top: 15px;
+	margin-top: -10px;
 	margin-right: 10px;
 	border: none;
+}
+.flag-menu-box {
+	display: flex;
+	flex-direction: column-reverse;
 }
 .icon-button {
 	background-color: transparent;

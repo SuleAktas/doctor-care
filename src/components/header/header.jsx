@@ -57,26 +57,27 @@ function Header() {
 					<div className="header-btn-text"> {t('headerButton')}</div>
 				</div>
 			</div>
+			<div className="flag-menu-box">
+				<div className="menu-button">
+					<button className="link-style icon-button" onClick={openNav}>
+						<img src={headerImage} alt=" Header Icon" />
+					</button>
+				</div>
+				<div className="flags">
+					<button
+						className="link-style"
+						onClick={() => handleLanguageChange('es')}
+					>
+						<img src={spainFlag} alt="Spain Flag" />
+					</button>
 
-			<div className="menu-button">
-				<button className="link-style icon-button" onClick={openNav}>
-					<img src={headerImage} alt=" Header Icon" />
-				</button>
-			</div>
-			<div className="flags">
-				<button
-					className="link-style"
-					onClick={() => handleLanguageChange('es')}
-				>
-					<img src={spainFlag} alt="Spain Flag" />
-				</button>
-
-				<button
-					className="link-style"
-					onClick={() => handleLanguageChange('tr')}
-				>
-					<img src={turkeyFlag} alt="Turkey Flag" />
-				</button>
+					<button
+						className="link-style"
+						onClick={() => handleLanguageChange('tr')}
+					>
+						<img src={turkeyFlag} alt="Turkey Flag" />
+					</button>
+				</div>
 			</div>
 		</div>
 	);

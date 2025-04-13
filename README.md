@@ -14,5 +14,5 @@ DoctorCare is a medical application that facilitate patient-doctor interactions 
  ```
  # 💻 Run
  ```
- npm start
+ npm run dev
  ```

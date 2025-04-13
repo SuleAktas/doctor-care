@@ -3,8 +3,6 @@ import './Info.css';
 import { useTranslation } from 'react-i18next';
 
 export default function Info() {
-	const myImage = process.env.PUBLIC_URL + '/images/infoPic.png';
-	const bigImage = process.env.PUBLIC_URL + '/images/infoPicBig.png';
 	const { t } = useTranslation();
 
 	const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 600);
@@ -49,9 +47,9 @@ export default function Info() {
 			<div className="info-img">
 				<div className="info-big-picture">
 					{isLargeScreen ? (
-						<img src={bigImage} alt="Information About Doctor Care" />
+						<img src="/images/infoPicBig.png" alt="Information About Doctor Care" />
 					) : (
-						<img src={myImage} alt="Information About Doctor Care" />
+						<img src="/images/infoPic.png" alt="Information About Doctor Care" />
 					)}
 				</div>
 			</div>

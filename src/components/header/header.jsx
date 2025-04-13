@@ -4,10 +4,6 @@ import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 function Header() {
-	const spainFlag = process.env.PUBLIC_URL + '/images/Spain-Flag.png';
-	const turkeyFlag = process.env.PUBLIC_URL + '/images/Turkey-Flag.png';
-	const headerImage = process.env.PUBLIC_URL + '/images/headerIcon.png';
-
 	const { t } = useTranslation();
 
 	const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +56,7 @@ function Header() {
 			<div className="flag-menu-box">
 				<div className="menu-button">
 					<button className="link-style icon-button" onClick={openNav}>
-						<img src={headerImage} alt=" Header Icon" />
+						<img src="/images/headerIcon.png" alt=" Header Icon" />
 					</button>
 				</div>
 				<div className="flags">
@@ -68,14 +64,14 @@ function Header() {
 						className="link-style"
 						onClick={() => handleLanguageChange('es')}
 					>
-						<img src={spainFlag} alt="Spain Flag" />
+						<img src="/images/Spain-Flag.png" alt="Spain Flag" />
 					</button>
 
 					<button
 						className="link-style"
 						onClick={() => handleLanguageChange('tr')}
 					>
-						<img src={turkeyFlag} alt="Turkey Flag" />
+						<img src="/images/Turkey-Flag.png" alt="Turkey Flag" />
 					</button>
 				</div>
 			</div>

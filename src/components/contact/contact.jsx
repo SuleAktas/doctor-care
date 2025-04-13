@@ -3,11 +3,6 @@ import './Contact.css';
 import { useTranslation } from 'react-i18next';
 
 function Contact() {
-	const contactImage = process.env.PUBLIC_URL + '/images/contactPic.png';
-	const contactBigImage = process.env.PUBLIC_URL + '/images/contactBigPic.png';
-	const mapImage = process.env.PUBLIC_URL + '/images/mapIcon.png';
-	const mailImage = process.env.PUBLIC_URL + '/images/mailIcon.png';
-
 	const { t } = useTranslation();
 
 	const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 550);
@@ -29,13 +24,13 @@ function Contact() {
 				<div className="contact-title">{t('contactTitle')}</div>
 				<div className="contact-address">
 					<div className="contact-address-icon">
-						<img src={mapImage} alt=" map icon" />
+						<img src="/images/mapIcon.png" alt=" map icon" />
 					</div>
 					<div className="contact-address-txt">R. Amauri Souza, 346</div>
 				</div>
 				<div className="contact-email">
 					<div className="contact-email-icon">
-						<img src={mailImage} alt=" mail icon" />
+						<img src="/images/mailIcon.png" alt=" mail icon" />
 					</div>
 					<div className="contact-email-txt">contato@doctorcare.com</div>
 				</div>
@@ -60,9 +55,9 @@ function Contact() {
 			<div className="contact-img-box">
 				<div className="contact-img">
 					{isLargeScreen ? (
-						<img src={contactBigImage} alt="Contact Doctor Care" />
+						<img src="/images/contactBigPic.png" alt="Contact Doctor Care" />
 					) : (
-						<img src={contactImage} alt="Contact Doctor Care" />
+						<img src="/images/contactPic.png" alt="Contact Doctor Care" />
 					)}
 				</div>
 			</div>

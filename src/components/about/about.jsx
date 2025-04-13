@@ -3,8 +3,6 @@ import './About.css';
 import { useTranslation } from 'react-i18next';
 
 function About() {
-	const aboutImage = process.env.PUBLIC_URL + '/images/aboutPic.png';
-	const aboutBigImage = process.env.PUBLIC_URL + '/images/aboutBigPic.png';
 	const { t } = useTranslation();
 
 	const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 550);
@@ -30,9 +28,9 @@ function About() {
 				<div className="about-box-img">
 					<div className="about-img">
 						{isLargeScreen ? (
-							<img src={aboutBigImage} alt="About Doctor Care" />
+							<img src="/images/aboutBigPic.png" alt="About Doctor Care" />
 						) : (
-							<img src={aboutImage} alt="About Doctor Care" />
+							<img src="/images/aboutPic.png" alt="About Doctor Care" />
 						)}
 					</div>
 				</div>

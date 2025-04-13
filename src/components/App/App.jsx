@@ -1,11 +1,11 @@
 import './App.css';
-import About from '../About/About.jsx';
-import Achievement from '../Achievement/Achievement.jsx';
-import Contact from '../Contact/Contact.jsx';
-import Footer from '../Footer/Footer.jsx';
-import Header from '../Header/Header.jsx';
-import Info from '../Info/Info.jsx';
-import Solution from '../Solution/Solution.jsx';
+import About from '../About/About';
+import Achievement from '../Achievement/Achievement';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import Info from '../Info/Info';
+import Solution from '../Solution/Solution';
 import { useTranslation } from 'react-i18next';
 
 function App() {

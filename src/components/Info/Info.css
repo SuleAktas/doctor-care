@@ -1,80 +1,78 @@
 @media only screen and (min-width: 700px) {
-	.info {
-		width: 100% !important;
-		display: flex;
-		
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-	.info-txt {
-	
-		min-width: 500px;
-	}
-	.info-img {
-		
-	}
-	.info-mini-title {
-		margin-left: 26px !important;
-		text-align: start !important;
-	}
-	.info-title {
-		font-size: 52px;
-		margin-top: 16px;
-		margin-left: 26px;
-		text-align: start !important;
-	}
-	.info-button {
-		margin-left: 26px !important;
-	}
-	.info-exp {
-		text-align: start !important;
-	}
+  .info {
+    width: 100% !important;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .info-txt {
+    min-width: 500px;
+  }
+  .info-img {
+  }
+  .info-mini-title {
+    margin-left: 26px !important;
+    text-align: start !important;
+  }
+  .info-title {
+    font-size: 52px;
+    margin-top: 16px;
+    margin-left: 26px;
+    text-align: start !important;
+  }
+  .info-button {
+    margin-left: 26px !important;
+  }
+  .info-exp {
+    text-align: start !important;
+  }
 }
 .info {
-	background-color: #dce9e2;
-	/* height: 1080px; */
-	position: relative;
+  background-color: #dce9e2;
+  /* height: 1080px; */
+  position: relative;
 }
 .info-mini-title {
-	font-size: 14px;
-	padding-top: 41px;
-	margin-left: 60px;
-	text-align: center;
-	color: #00856f;
+  font-size: 14px;
+  padding-top: 41px;
+  margin-left: 60px;
+  text-align: center;
+  color: #00856f;
 }
 .info-title {
-	font-size: 34px;
-	margin-top: 16px;
-	margin-left: 26px;
-	text-align: center;
-	color: #212529;
+  font-size: 34px;
+  margin-top: 16px;
+  margin-left: 26px;
+  text-align: center;
+  color: #212529;
 }
 .info-exp {
-	font-size: 18px;
-	margin-top: 24px;
-	margin-left: 26px;
-	margin-right: 26px;
-	text-align: center;
-	color: #212529;
+  font-size: 18px;
+  margin-top: 24px;
+  margin-left: 26px;
+  margin-right: 26px;
+  text-align: center;
+  color: #212529;
 }
 
 .info-button {
-	margin-top: 32px;
-	display: flex;
-	margin-left: 56px;
-	width: 270px;
-	height: 52px;
-	background-color: #00856f;
-	border-radius: 45px;
+  margin-top: 32px;
+  display: flex;
+  margin-left: 56px;
+  width: 270px;
+  height: 52px;
+  background-color: #00856f;
+  border-radius: 45px;
 }
 .info-btn-img {
-	margin-top: 14px;
-	margin-left: 32px;
-	color: white;
+  margin-top: 14px;
+  margin-left: 32px;
+  color: white;
 }
 .info-btn-text {
-	margin-top: 16px;
-	margin-left: 16px;
-	font-size: 14px;
-	color: white;
+  margin-top: 16px;
+  margin-left: 16px;
+  font-size: 14px;
+  color: white;
 }

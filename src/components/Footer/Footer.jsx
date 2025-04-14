@@ -1,6 +1,6 @@
-import React from "react";
-import "./Footer.css";
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import './Footer.css';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
   const { t } = useTranslation();
@@ -14,7 +14,7 @@ function Footer() {
           <div className="footer-margin"> ©2024 Beautysalon.</div>
         </div>
         <div className="footer-row">
-          <div className="footer-margin"> {t("footerTitle")}</div>
+          <div className="footer-margin"> {t('footerTitle')}</div>
         </div>
         <div className="footer-row">
           <div className="footer-icons">

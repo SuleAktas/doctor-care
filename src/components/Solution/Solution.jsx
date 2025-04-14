@@ -1,5 +1,5 @@
-import React from "react";
-import "./Solution.css";
+import React from 'react';
+import './Solution.css';
 
 function Solution(props) {
   return (

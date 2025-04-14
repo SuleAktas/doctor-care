@@ -7,23 +7,28 @@ import Info from '../Info/Info';
 function Achievements() {
 	const { t } = useTranslation();
 
-	useEffect(() => {
-		const updatePosition = () => {
-			
-		};
+	const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 699);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 600);
+    };
 
-		updatePosition();
-		window.addEventListener('resize', updatePosition);
-		return () => window.removeEventListener('resize', updatePosition);
-	}, []);
+    window.addEventListener("resize", handleResize);
+
+   
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 	return (
 		<div className='outer-box'>
+			 
 		<div className='test_info-achievement'>
 			<div className='test_inner-box'>
 				<Info/>
 				<div className="test_info-img" >
 				<img
-					src={window.innerWidth > 600 ? "/images/infoPicBig.png" : "/images/infoPic.png"}
+					src={isLargeScreen ? "/images/infoPicBig.png" : "/images/infoPic.png"}
 					alt="Info"
 					style={{
 						height: '100%',

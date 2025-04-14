@@ -1,68 +1,15 @@
-@media only screen and (min-width: 700px) {
-	
-	
 
-	.achievement-box {
-		width: 290px;
-	}
-
-	.achievement-box:nth-child(-n + 2) {
-		border-right: 1px solid #00856f;
-	}
-	.test_info-achievement{
-		background-color: #dce9e2;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-		height: 550px;
-	}
-	.test_inner-box{
-		background-color: #dce9e2;
-	display: flex
-	;
-	gap: 51px;
-	width: 1154px;
+.test_inner-box{
 	
-	}
-	.test_achievement{
-		background-color: #fffaf1;
-		border-radius: 10px;
-		display: flex;
-		margin-top: -150px;
-		width: 1154px;
-		z-index: 999;
-		position: relative;
-	}
-}
-.test_achievement{
-	background-color: #fffaf1;
-	border-radius: 10px;
-	display: flex;
-	margin-top: -150px;
-	width: 1154px;
-	z-index: 999;
-	position: relative;
-}
-.test_info-achievement{
-	background-color: #dce9e2;;
-	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
 	
-}
+	padding-bottom: 450px;
+	display: flex;
+	align-items: center;
 
-.achievement-box {
-	width: 385px;
-	padding-top: 40px;
-	text-align: center;
-	height: 100px;
-	border-radius: 2%;
-}
-.achievement-box:nth-child(-n + 2) {
-	padding-bottom: 60px;
-}
+}	
+
+
 
 .achievement-number {
 	font-size: 48px;
@@ -79,35 +26,122 @@
 	margin-top: 60px;
 	margin-left: 57px;
 }
-.achivement-container {
-	position: relative;
-	height: 200px;
+
+
+.test_info-achievement{
+	/* position: relative; */
+	background-color: #dce9e2;;
+}
+
+.test_achievement {
+	width: 327px ;
+	background-color: #fffaf1;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: absolute ;
+	
+	border-radius: 10px;
+    
+	/* margin-top: -145px; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+	margin-top: -220px;
+ }
+  
+  .achievement-box {
+	width: 327px;
+	text-align: center;
+	height: 100px;
+	border-radius: 2%;
+  }
+  .achievement-box:nth-child(-n + 2) {
+	padding-bottom: 60px;
+  }
+  
+  .achievement-number {
+	font-size: 48px;
+	font-weight: bold;
+	color: #212529;
+  }
+  
+  .achievement-text {
+	font-size: 16px;
+	color: #00856f;
+  }
+
+@media only screen and (min-width: 700px) {
+	.outer-box{
+		padding-bottom: 100px;
+    background-color: #dce9e2;
+	}
+	
+
+	.achievement-box {
+		width: 385px;
+	}
+
+	.achievement-box:nth-child(-n + 2) {
+		border-right: 1px solid #00856f;
+	}
+	.test_info-achievement{
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		height: 550px;
+	}
+	.test_inner-box{
+		background-color: #dce9e2;
+		display: flex;
+		flex-direction: row !important;
+		gap: 51px;
+		width: 1154px;
+		padding-bottom: 70px !important;
+		
+	
+	}
+	.test_achievement{
+		background-color: #fffaf1;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: row !important;
+		margin-top: -150px ;
+		width: 1154px !important;
+		z-index: 999;
+		position: relative !important;
+		
+		/* margin-top: -10px; */
+        left: 0;
+        transform: none;
+	}
+
+  
+
+	.achivement-container {
+		position: relative;
+		height: 200px;
+		
+	}
+	
+	.achievement {
+		position: absolute;
+		background-color: #fffaf1;
+		right: 0;
+		bottom: 0;
+		border-radius: 10px;
+		z-index: 0;
+		display: flex;
+	}
+	
+	.info-img {
+		right: 0;
+		bottom: 80px;
+		position: absolute;
+		z-index: -1;
+		pointer-events: none;
+	}
+	
+	
 	
 }
-
-.achievement {
-	position: absolute;
-	background-color: #fffaf1;
-	right: 0;
-	bottom: 0;
-	border-radius: 10px;
-	z-index: 0;
-	display: flex;
-}
-
-.info-img {
-	right: 0;
-	bottom: 80px;
-	position: absolute;
-	z-index: -1;
-	pointer-events: none;
-}
-.achivement-box{
-	width: 385px;
-	padding-top: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-

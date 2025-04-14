@@ -23,10 +23,10 @@ function Achievements() {
 	return (
 		<div className='outer-box'>
 			 
-		<div className='test_info-achievement'>
-			<div className='test_inner-box'>
+		<div className='info-achievement'>
+			<div className='inner-box'>
 				<Info/>
-				<div className="test_info-img" >
+				<div className="info-img" >
 				<img
 					src={isLargeScreen ? "/images/infoPicBig.png" : "/images/infoPic.png"}
 					alt="Info"
@@ -37,7 +37,7 @@ function Achievements() {
 				/>
 				</div>
 			</div>
-			<div className="test_achievement">
+			<div className="achievement">
 				<Achievement number=" +3.500" text={t('achievement1')} />
 				<Achievement number="+15" text={t('achievement2')} />
 				<Achievement number="+10" text={t('achievement3')} />

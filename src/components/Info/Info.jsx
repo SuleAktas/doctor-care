@@ -1,22 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Info.css';
 import { useTranslation } from 'react-i18next';
 
 export default function Info() {
 	const { t } = useTranslation();
-
-	const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 600);
-	useEffect(() => {
-		const handleResize = () => {
-			setIsLargeScreen(window.innerWidth > 600);
-		};
-
-		window.addEventListener('resize', handleResize);
-
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
 
 	return (
 		<div className="info">
@@ -42,15 +29,6 @@ export default function Info() {
 						</svg>
 					</div>
 					<div className="info-btn-text"> {t('headerButton')}</div>
-				</div>
-			</div>
-			<div className="info-img">
-				<div className="info-big-picture">
-					{isLargeScreen ? (
-						<img src="/images/infoPicBig.png" alt="Information About Doctor Care" />
-					) : (
-						<img src="/images/infoPic.png" alt="Information About Doctor Care" />
-					)}
 				</div>
 			</div>
 		</div>

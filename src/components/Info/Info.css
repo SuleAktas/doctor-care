@@ -1,18 +1,17 @@
 @media only screen and (min-width: 700px) {
 	.info {
 		width: 100% !important;
-		height: fit-content !important;
-		padding-bottom: 150px !important;
 		display: flex;
+		
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
 	.info-txt {
-		margin-top: 80px;
-		margin-left: 50px;
-		width: 50%;
+	
 		min-width: 500px;
 	}
 	.info-img {
-		width: 50%;
+		
 	}
 	.info-mini-title {
 		margin-left: 26px !important;
@@ -33,7 +32,7 @@
 }
 .info {
 	background-color: #dce9e2;
-	height: 1080px;
+	/* height: 1080px; */
 	position: relative;
 }
 .info-mini-title {
@@ -78,8 +77,4 @@
 	margin-left: 16px;
 	font-size: 14px;
 	color: white;
-}
-.info-big-picture {
-	margin-top: 60px;
-	margin-left: 57px;
 }

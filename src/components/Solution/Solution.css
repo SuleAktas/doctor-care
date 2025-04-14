@@ -1,6 +1,7 @@
 @media only screen and (min-width: 800px) {
   .solution-box {
     width: calc(33.33% - 22px);
+   
   }
   .solution-mini-title {
     font-size: 14px;
@@ -15,10 +16,8 @@
 }
 .solution-box {
   max-width: 327px;
-  max-width: 207px;
   min-width: 327px;
-  width: 327px;
-  height: 207px;
+ 
   background-color: #ffffff;
   border-radius: 2%;
   border: solid 1px #dce9e2;
@@ -67,4 +66,10 @@
   font-size: 16px;
   margin: 10px;
   padding-right: 10px;
+}
+.solution{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

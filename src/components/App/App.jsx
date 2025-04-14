@@ -1,12 +1,11 @@
 import './App.css';
 import About from '../About/About';
-import Achievement from '../Achievement/Achievement';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import Info from '../Info/Info';
 import Solution from '../Solution/Solution';
 import { useTranslation } from 'react-i18next';
+import Achievements from '../Achievements/Achievements';
 
 function App() {
 	const { t } = useTranslation();
@@ -23,12 +22,10 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Info />
-			<div className="achievement">
-				<Achievement number=" +3.500" text={t('achievement1')} />
-				<Achievement number="+15" text={t('achievement2')} />
-				<Achievement number="+10" text={t('achievement3')} />
-			</div>
+			
+		
+		<Achievements/>
+		
 
 			<div className="solution">
 				<div className="solution-main">
@@ -45,8 +42,8 @@ function App() {
 			</div>
 			<About />
 			<img />
-			<Contact />
-			<Footer />
+			<Contact /> 
+			 <Footer />
 		</>
 	);
 }

@@ -12,17 +12,11 @@
   .about-box-txt {
     width: 550px;
   }
-  .about-box-img {
-    /* margin-left: 6%; */
-  }
 }
 
 .about {
   background-color: #fffaf1;
   display: flex;
-}
-.about-box {
-  /* width: 325px; */
 }
 
 .about-mini-title {

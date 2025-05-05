@@ -9,8 +9,7 @@
   .info-txt {
     min-width: 500px;
   }
-  .info-img {
-  }
+
   .info-mini-title {
     margin-left: 26px !important;
     text-align: start !important;
@@ -30,7 +29,6 @@
 }
 .info {
   background-color: #dce9e2;
-  /* height: 1080px; */
   position: relative;
 }
 .info-mini-title {

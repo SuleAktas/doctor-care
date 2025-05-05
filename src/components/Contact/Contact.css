@@ -4,13 +4,6 @@
     background-color: white;
     flex-direction: row;
   }
-  .contact-img-box {
-    /* width: 50% !important; */
-  }
-  .contact-info-box {
-    /* margin-left: 65px !important; */
-    /* width: 40% !important; */
-  }
 }
 
 .contact {
@@ -20,9 +13,6 @@
   justify-content: space-evenly;
 }
 
-.contact-box {
-  /* width: 325px; */
-}
 .contact-title {
   font-size: 30px;
   font-weight: bold;

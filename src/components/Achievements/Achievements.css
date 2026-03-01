@@ -1,0 +1,118 @@
+.inner-box {
+  flex-direction: column;
+  padding-bottom: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.achievement-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.achievement-text {
+  font-size: 16px;
+  color: #00856f;
+}
+
+.info-big-picture {
+  margin-top: 60px;
+  margin-left: 57px;
+}
+
+.info-achievement {
+  background-color: #dce9e2;
+}
+
+.achievement {
+  width: 327px;
+  background-color: #fffaf1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: absolute;
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -220px;
+}
+
+.achievement-box {
+  width: 327px;
+  text-align: center;
+  height: 100px;
+  border-radius: 2%;
+}
+.achievement-box:nth-child(-n + 2) {
+  padding-bottom: 60px;
+}
+
+.achievement-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.achievement-text {
+  font-size: 16px;
+  color: #00856f;
+}
+
+@media only screen and (min-width: 700px) {
+  .outer-box {
+    padding-bottom: 100px;
+    background-color: #dce9e2;
+  }
+
+  .achievement-box {
+    width: 385px;
+  }
+
+  .achievement-box:nth-child(-n + 2) {
+    border-right: 1px solid #00856f;
+  }
+  .info-achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 550px;
+  }
+  .inner-box {
+    background-color: #dce9e2;
+    display: flex;
+    flex-direction: row !important;
+    gap: 51px;
+    width: 1154px;
+    padding-bottom: 70px !important;
+  }
+  .achievement {
+    background-color: #fffaf1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row !important;
+    margin-top: -150px;
+    width: 1154px !important;
+    z-index: 999;
+    position: relative !important;
+
+    /* margin-top: -10px; */
+    left: 0;
+    transform: none;
+  }
+
+  .achivement-container {
+    position: relative;
+    height: 200px;
+  }
+
+  .achievement {
+    position: absolute;
+    background-color: #fffaf1;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    z-index: 0;
+    display: flex;
+  }
+}
